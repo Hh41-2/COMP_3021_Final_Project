@@ -22,7 +22,7 @@ function validate(event)
               }
               errorFlag = true;
        }
-       
+         
        // Validate if the input is empty or not a number for Hours volunteered
        if(!isNotEmpty("vol_hoursvolunteered"))
        {

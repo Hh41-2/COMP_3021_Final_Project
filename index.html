@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div id="nav">
+            <h1>Community Support</h1>
+            <ul>
+                <li><a href="#section_1">Donation Tracker</a></li>
+                <li><a href="#section_2">Volunteer Hours Tracker</a></li>
+                <li><a href="#section_3">Event Signup</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section id="section_2">
+        <form id="volunteershourstracker" action="https://httpbin.org/post" method="post">
+            <h2>
+                Volunteer Hours Tracker
+            </h2>
+            <fieldset class="volunteerinformation">
+                <label for="vol_charityname"> Charity Name: </label>
+                <input type="text" id="vol_charityname" name="vol_charityname"/>
+                <span class="vol_charityname_error error" id="vol_charityname_error"></span>
+
+                <label for="vol_hoursvolunteered"> Hours Volunteered: </label>
+                <input type="text" id="vol_hoursvolunteered" name="vol_hoursvolunteered"/>
+                <span class="vol_hoursvolunteered_error error" id="vol_hoursvolunteered_error"></span>
+
+                <label for="vol_volunteerdate"> Date of Volunteer </label>
+                <input type="date" id="vol_volunteerdate" name="vol_volunteerdate"/>
+                <span class="vol_volunteerdate_error error" id="vol_volunteerdate_error"></span>
+
+                <label for="vol_volunteerrating"> Volunteer Experience Rating: </label>
+                    <select name="vol_dropdownMenu" id="vol_dropdownMenu">
+                        <option value="">--Please rate your experience--</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                    <span class="vol_dropdownMenu_error error" id="vol_dropdownMenu_error"></span>
+                <button type="submit"> Submit </button>
+            </fieldset>
+        </form>
+    </section>
+    <footer>
+        <p>© 2025 Group 8 of AD&D. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

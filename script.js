@@ -22,15 +22,16 @@ function validate(event)
               }
               errorFlag = true;
        }
-       
+         
        // Validate if the input is empty or not a number for Hours volunteered
        if(!isNotEmpty("vol_hoursvolunteered"))
        {
               showError("vol_hoursvolunteered", "* Please enter the required information");
-              if(!errorFlag)
+              if(!errorFlag) 
               {
                      document.getElementById("vol_hoursvolunteered").focus();
                      document.getElementById("vol_hoursvolunteered").select();
+                     
               }
               errorFlag = true;
        } else if(!isNumber("vol_hoursvolunteered"))

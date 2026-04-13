@@ -16,4 +16,4 @@ Worked on part 1 of the webpage.
 Was responsible for Volunteer Hours Tracker.
 
 - Name 3: Johnson Nguyen
-Handled .
+Handled.
